@@ -7,3 +7,14 @@
   font-family: 'Whitney Light';
   src: url(fonts/Whitney-Light-Pro.otf) format('opentype');
 }
+
+:root {
+  --brand-color-dark: #37384C;
+  --brand-color-orange: #E0820B;
+  --brand-color-green: #91DC3E;
+  --brand-color-purple: #F860C8;
+  --brand-color-blue: #4A91F2;
+  --font-color-body: #37384C;
+  --font-color-light: #12263F;
+  --background-color-grey: #F9FBFD;
+}
