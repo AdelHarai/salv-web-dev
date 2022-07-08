@@ -37,7 +37,7 @@ a:not([class]) {
 img,
 picture,
 svg {
-  width: 100%;
+  max-width: 100%;
   display: block;
 }
 
@@ -135,6 +135,10 @@ nav {
   margin-bottom: 6rem;
 }
 
+.home-hero-animation>img {
+  width: 100%;
+}
+
 .home-hero-title {
   color: #ffffff;
   text-align: center;
@@ -164,10 +168,93 @@ nav {
   background-color: #3f79cb;
 }
 
+/* PARTNERS */
+.home-partners-container {
+  max-width: 944px;
+  margin-top: -27px;
+  margin-inline: auto;
+  margin-bottom: 87px;
+  padding-top: 36px;
+  padding-bottom: 24px;
+  padding-inline: 68px;
+  border-radius: 1rem;
+  background-color: var(--background-color-grey);
+  box-shadow: 0 4px 12px 0 #00000005;
+}
+
+.home-partners-title {
+  font-family: "Whitney Book";
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--font-color-light);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.partners-wrapper {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.partner-row-1,
+.partner-row-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-logo-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;
+}
+
+.partner-logo-container>img {
+  opacity: 90%;
+  max-width: 70%;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 968px) {
+
+  nav,
+  .grid-container,
+  .home-partners-container {
+    margin-inline: 24px;
+  }
+}
+
 @media screen and (max-width: 768px) {
 
   nav,
   .home-hero {
     padding-inline: 1.5rem;
+  }
+
+  .home-partners-container {
+    padding-inline: 36px;
+    padding-bottom: 36px;
+  }
+
+  .partner-row-1,
+  .partner-row-2 {
+    display: grid;
+    grid-template-rows: repeat(5, 50px);
+  }
+
+  .partners-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .partner-logo-container>img {
+    max-width: 40%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+
+  .partner-logo-container>img {
+    max-width: 70%;
   }
 }
