@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Whitney Book';
+  src: url(fonts/Whitney-Book-Pro.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Whitney Light';
+  src: url(fonts/Whitney-Light-Pro.otf) format('opentype');
+}
