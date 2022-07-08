@@ -54,12 +54,41 @@ svg {
 
 /* Custom variables */
 :root {
-  --brand-color-dark: #37384C;
   --brand-color-orange: #E0820B;
   --brand-color-green: #91DC3E;
   --brand-color-purple: #F860C8;
   --brand-color-blue: #4A91F2;
   --font-color-body: #37384C;
   --font-color-light: #12263F;
+  --background-color-dark: #37384C;
   --background-color-grey: #F9FBFD;
+}
+
+/* Utility classes */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: minmax(272px, 944px);
+  justify-content: center;
+}
+
+body {
+  color: var(--font-color-body);
+}
+
+/* NAV */
+.nav-wrapper {
+  position: fixed;
+  width: 100%;
+  background-color: var(--background-color-dark);
+}
+
+nav {
+  min-width: 272px;
+  max-width: 944px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  margin-inline: auto;
+  padding-inline: 24px;
 }
