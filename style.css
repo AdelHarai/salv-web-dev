@@ -101,6 +101,7 @@ p {
 
 .button {
   width: max-content;
+  min-height: 24px;
   text-transform: uppercase;
   padding: 0.75em 1.5em;
   border-radius: 0.625rem;
@@ -148,6 +149,7 @@ nav {
 
 .home-hero-animation {
   margin-bottom: 6rem;
+  min-height: 32px;
 }
 
 .home-hero-animation>img {
@@ -216,6 +218,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 62px;
 }
 
 .partner-logo-container {
