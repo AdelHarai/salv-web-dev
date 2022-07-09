@@ -170,13 +170,13 @@ nav {
 
 /* PARTNERS */
 .home-partners-container {
-  max-width: 944px;
-  margin-top: -27px;
+  max-width: 59rem;
+  margin-top: -1.688rem;
   margin-inline: auto;
-  margin-bottom: 87px;
-  padding-top: 36px;
-  padding-bottom: 24px;
-  padding-inline: 68px;
+  margin-bottom: 5.438rem;
+  padding-top: 2.25rem;
+  padding-bottom: 1.5rem;
+  padding-inline: 4.25rem;
   border-radius: 1rem;
   background-color: var(--background-color-grey);
   box-shadow: 0 4px 12px 0 #00000005;
@@ -184,11 +184,11 @@ nav {
 
 .home-partners-title {
   font-family: "Whitney Book";
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   color: var(--font-color-light);
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .partners-wrapper {
@@ -206,7 +206,7 @@ nav {
 .partner-logo-container {
   display: flex;
   justify-content: space-around;
-  padding: 12px;
+  padding: 0.75rem;
 }
 
 .partner-logo-container>img {
@@ -220,20 +220,40 @@ nav {
   nav,
   .grid-container,
   .home-partners-container {
-    margin-inline: 24px;
+    margin-inline: 1.5rem;
   }
 }
 
 @media screen and (max-width: 768px) {
 
-  nav,
   .home-hero {
-    padding-inline: 1.5rem;
+    padding-top: 2rem;
+  }
+
+  .home-hero-animation {
+    position: relative;
+    width: 100%;
+    height: 1.625rem;
+    overflow-x: hidden;
+    margin-bottom: 2rem;
+  }
+
+  .home-hero-animation>img {
+    max-width: none;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .home-hero-subtitle {
+    margin-bottom: 2.5rem;
   }
 
   .home-partners-container {
-    padding-inline: 36px;
-    padding-bottom: 36px;
+    padding-inline: 2.25rem;
+    padding-bottom: 2.25rem;
   }
 
   .partner-row-1,
