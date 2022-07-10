@@ -69,7 +69,7 @@ svg {
   --background-color-grey: #F9FBFD;
 }
 
-/* Utility classes */
+/* Utility classes and texts */
 
 .grid-container {
   display: grid;
@@ -181,6 +181,7 @@ nav {
   animation-duration: 18s;
   animation-iteration-count: infinite;
 }
+
 
 @keyframes middle-line-color {
   25% {
@@ -413,6 +414,11 @@ nav {
 }
 
 @media screen and (max-width: 430px) {
+
+  .home-hero-animation>svg {
+    transform: scale(2);
+    display: revert;
+  }
 
   .partner-logo-container>img {
     max-width: 70%;
