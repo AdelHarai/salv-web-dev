@@ -159,31 +159,91 @@ nav {
 
 /* hero lines animation */
 
-#bottom-green-line,
 #top-green-line {
-  animation-name: green-line-color;
-  animation-delay: 2s;
-  animation-duration: 18s;
-  animation-iteration-count: infinite;
+  transform: translate(-163px, 1px);
+  stroke-linecap: round;
+  animation: growAnimationReverse, greenLineColor;
+  animation-delay: 1s, 2s;
+  animation-duration: 2s, 18s;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, forwards;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  pointer-events: none;
 }
 
-#bottom-orange-line,
+
+#bottom-green-line {
+  animation: growAnimation, greenLineColor;
+  animation-delay: 1s, 2s;
+  animation-duration: 2s, 18s;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, forwards;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  pointer-events: none;
+}
+
 #top-orange-line {
-  animation-name: orange-line-color;
-  animation-delay: 2s;
-  animation-duration: 18s;
-  animation-iteration-count: infinite;
+  animation: growAnimationReverse, orangeLineColor;
+  animation-delay: 1s, 2s;
+  animation-duration: 1s, 18s;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, forwards;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  pointer-events: none;
 }
 
-#purple-line {
-  animation-name: middle-line-color;
-  animation-delay: 2s;
-  animation-duration: 18s;
-  animation-iteration-count: infinite;
+#bottom-orange-line {
+  transform: translate(403px, 10px);
+  stroke-linecap: round;
+  animation: growAnimationReverse, orangeLineColor;
+  animation-delay: 1s, 2s;
+  animation-duration: 2s, 18s;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, forwards;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  pointer-events: none;
+}
+
+#purple-line-left {
+  animation: growAnimationReverse, middleLineColor;
+  animation-delay: 0.8s, 2s;
+  animation-duration: 1s, 18s;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, forwards;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  pointer-events: none;
+}
+
+#purple-line-right {
+  animation: growAnimation, middleLineColor;
+  animation-delay: 1s, 2s;
+  animation-duration: 1s, 18s;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, forwards;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  pointer-events: none;
+}
+
+@keyframes growAnimation {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes growAnimationReverse {
+  to {
+    stroke-dashoffset: 1200;
+  }
 }
 
 
-@keyframes middle-line-color {
+@keyframes middleLineColor {
   25% {
     stroke: var(--brand-color-green);
   }
@@ -209,55 +269,55 @@ nav {
   }
 }
 
-@keyframes green-line-color {
+@keyframes greenLineColor {
   25% {
-    fill: var(--brand-color-green);
+    stroke: var(--brand-color-green);
   }
 
   37.5% {
-    fill: var(--brand-color-orange);
+    stroke: var(--brand-color-orange);
   }
 
   50% {
-    fill: var(--brand-color-orange);
+    stroke: var(--brand-color-orange);
   }
 
   62.5% {
-    fill: var(--brand-color-purple);
+    stroke: var(--brand-color-purple);
   }
 
   75% {
-    fill: var(--brand-color-purple);
+    stroke: var(--brand-color-purple);
   }
 
   100% {
-    fill: var(--brand-color-green);
+    stroke: var(--brand-color-green);
   }
 }
 
-@keyframes orange-line-color {
+@keyframes orangeLineColor {
   25% {
-    fill: var(--brand-color-green);
+    stroke: var(--brand-color-green);
   }
 
   37.5% {
-    fill: var(--brand-color-purple);
+    stroke: var(--brand-color-purple);
   }
 
   50% {
-    fill: var(--brand-color-orange);
+    stroke: var(--brand-color-orange);
   }
 
   62.5% {
-    fill: var(--brand-color-green);
+    stroke: var(--brand-color-green);
   }
 
   75% {
-    fill: var(--brand-color-purple);
+    stroke: var(--brand-color-purple);
   }
 
   100% {
-    fill: var(--brand-color-orange);
+    stroke: var(--brand-color-orange);
   }
 }
 
