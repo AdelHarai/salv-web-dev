@@ -420,9 +420,12 @@ nav {
   nav,
   .grid-container,
   .home-partners-container,
-  .home-section-title,
-  .home-why-choose-salv p {
+  .home-section-title {
     margin-inline: 1.5rem;
+  }
+
+  .home-why-choose-salv p {
+    padding-inline: 1.5rem;
   }
 }
 
@@ -435,7 +438,7 @@ nav {
   .home-hero-animation {
     position: relative;
     height: 3rem;
-    overflow-x: hidden;
+    overflow: hidden;
     margin-bottom: 2rem;
   }
 
